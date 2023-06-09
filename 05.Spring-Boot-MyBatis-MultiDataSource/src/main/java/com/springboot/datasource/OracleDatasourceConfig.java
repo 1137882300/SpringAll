@@ -13,7 +13,11 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
-
+/**
+ * @author juzi
+ * @date 2023/6/9 下午 3:48
+ * @description 通过分包实现多数据源
+ */
 @Configuration
 @MapperScan(basePackages = OracleDatasourceConfig.PACKAGE, 
 	sqlSessionFactoryRef = "oracleSqlSessionFactory")
